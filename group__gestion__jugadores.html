@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Integrador: Gestion de Jugadores</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Integrador<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Juego Space Battle con sistema por turnos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group__gestion__jugadores.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Gestion de Jugadores </div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Funciones para el alta, baja, modificacion y consulta de jugadores.  
+<a href="#details">Más...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ga2b9a5342eb2b91bff12b2dfe51d752db" id="r_ga2b9a5342eb2b91bff12b2dfe51d752db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2b9a5342eb2b91bff12b2dfe51d752db">busquedaBinaria</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores, <a class="el" href="integrador_comentado_8cpp.html#a535170a6196e8d7bed76e58120a31e48">tcadena</a> buscar)</td></tr>
+<tr class="memdesc:ga2b9a5342eb2b91bff12b2dfe51d752db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza una busqueda binaria en el arreglo de jugadores ordenado por apodo.  <br /></td></tr>
+<tr class="memitem:ga27e21db9e617c62c55b7b2366a90b7c2" id="r_ga27e21db9e617c62c55b7b2366a90b7c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga27e21db9e617c62c55b7b2366a90b7c2">insercionJugador</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores, <a class="el" href="struct_jugador.html">Jugador</a> &amp;jugadorTemp)</td></tr>
+<tr class="memdesc:ga27e21db9e617c62c55b7b2366a90b7c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserta un nuevo jugador en el arreglo manteniendo el orden alfabetico por apodo.  <br /></td></tr>
+<tr class="memitem:ga32e8da5fe3d4e3f21f15de5366f9f808" id="r_ga32e8da5fe3d4e3f21f15de5366f9f808"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga32e8da5fe3d4e3f21f15de5366f9f808">cargaManual</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores)</td></tr>
+<tr class="memdesc:ga32e8da5fe3d4e3f21f15de5366f9f808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permite al usuario ingresar los datos de un jugador manualmente.  <br /></td></tr>
+<tr class="memitem:gafc50d3bc59d7f433261953c6447a32a9" id="r_gafc50d3bc59d7f433261953c6447a32a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gafc50d3bc59d7f433261953c6447a32a9">consultarJugador</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores)</td></tr>
+<tr class="memdesc:gafc50d3bc59d7f433261953c6447a32a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busca y muestra los datos de un jugador por su apodo.  <br /></td></tr>
+<tr class="memitem:gae37efd84c4ca8edd3883bcbabcabe512" id="r_gae37efd84c4ca8edd3883bcbabcabe512"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae37efd84c4ca8edd3883bcbabcabe512">modificarJugador</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores)</td></tr>
+<tr class="memdesc:gae37efd84c4ca8edd3883bcbabcabe512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permite cambiar el nombre o apellido de un jugador existente.  <br /></td></tr>
+<tr class="memitem:ga04332995589ac8453002f277560e4be2" id="r_ga04332995589ac8453002f277560e4be2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga04332995589ac8453002f277560e4be2">eliminarJugador</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores)</td></tr>
+<tr class="memdesc:ga04332995589ac8453002f277560e4be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elimina un jugador del registro, previa confirmacion.  <br /></td></tr>
+<tr class="memitem:ga38f8ec177c120d3b1e1642c080caeea6" id="r_ga38f8ec177c120d3b1e1642c080caeea6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga38f8ec177c120d3b1e1642c080caeea6">desplazarJugador</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores, int posicion)</td></tr>
+<tr class="memdesc:ga38f8ec177c120d3b1e1642c080caeea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desplaza los elementos del arreglo hacia la izquierda para eliminar a un jugador.  <br /></td></tr>
+<tr class="memitem:ga49af17e6196b23dd9a0392cfd4fc8d8d" id="r_ga49af17e6196b23dd9a0392cfd4fc8d8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga49af17e6196b23dd9a0392cfd4fc8d8d">listarJugadores</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores, int index)</td></tr>
+<tr class="memdesc:ga49af17e6196b23dd9a0392cfd4fc8d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra recursivamente la lista de todos los jugadores registrados.  <br /></td></tr>
+<tr class="memitem:gab8a2b863724b6530e3b7f613b3166c5e" id="r_gab8a2b863724b6530e3b7f613b3166c5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab8a2b863724b6530e3b7f613b3166c5e">cargaAutomatica</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores)</td></tr>
+<tr class="memdesc:gab8a2b863724b6530e3b7f613b3166c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Genera automaticamente una cantidad de jugadores con datos aleatorios.  <br /></td></tr>
+<tr class="memitem:ga3940fd1351d83ffabe4f80cc1e121fe0" id="r_ga3940fd1351d83ffabe4f80cc1e121fe0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3940fd1351d83ffabe4f80cc1e121fe0">generarApodo</a> (char nombre[], char apellido[], char apodo[])</td></tr>
+<tr class="memdesc:ga3940fd1351d83ffabe4f80cc1e121fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea un apodo unico combinando partes del nombre, apellido y un numero aleatorio.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Descripción detallada</h2>
+<p>Funciones para el alta, baja, modificacion y consulta de jugadores. </p>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones</h2>
+<a id="ga2b9a5342eb2b91bff12b2dfe51d752db" name="ga2b9a5342eb2b91bff12b2dfe51d752db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2b9a5342eb2b91bff12b2dfe51d752db">&#9670;&#160;</a></span>busquedaBinaria()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int busquedaBinaria </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>datosJugadores</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="integrador_comentado_8cpp.html#a535170a6196e8d7bed76e58120a31e48">tcadena</a></td>          <td class="paramname"><span class="paramname"><em>buscar</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Realiza una busqueda binaria en el arreglo de jugadores ordenado por apodo. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">datosJugadores</td><td>La estructura que contiene a los jugadores. </td></tr>
+    <tr><td class="paramname">buscar</td><td>El apodo del jugador a buscar. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>La posicion (indice) del jugador si se encuentra, de lo contrario -1. </dd></dl>
+
+</div>
+</div>
+<a id="gab8a2b863724b6530e3b7f613b3166c5e" name="gab8a2b863724b6530e3b7f613b3166c5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab8a2b863724b6530e3b7f613b3166c5e">&#9670;&#160;</a></span>cargaAutomatica()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cargaAutomatica </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>datosJugadores</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Genera automaticamente una cantidad de jugadores con datos aleatorios. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">datosJugadores</td><td>Referencia a la estructura de jugadores. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga32e8da5fe3d4e3f21f15de5366f9f808" name="ga32e8da5fe3d4e3f21f15de5366f9f808"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga32e8da5fe3d4e3f21f15de5366f9f808">&#9670;&#160;</a></span>cargaManual()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cargaManual </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>datosJugadores</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permite al usuario ingresar los datos de un jugador manualmente. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">datosJugadores</td><td>Referencia a la estructura de jugadores. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gafc50d3bc59d7f433261953c6447a32a9" name="gafc50d3bc59d7f433261953c6447a32a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafc50d3bc59d7f433261953c6447a32a9">&#9670;&#160;</a></span>consultarJugador()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void consultarJugador </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>datosJugadores</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Busca y muestra los datos de un jugador por su apodo. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">datosJugadores</td><td>Referencia a la estructura de jugadores. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga38f8ec177c120d3b1e1642c080caeea6" name="ga38f8ec177c120d3b1e1642c080caeea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga38f8ec177c120d3b1e1642c080caeea6">&#9670;&#160;</a></span>desplazarJugador()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void desplazarJugador </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>datosJugadores</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>posicion</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Desplaza los elementos del arreglo hacia la izquierda para eliminar a un jugador. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">datosJugadores</td><td>Referencia a la estructura de jugadores. </td></tr>
+    <tr><td class="paramname">posicion</td><td>El indice del jugador a eliminar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga04332995589ac8453002f277560e4be2" name="ga04332995589ac8453002f277560e4be2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga04332995589ac8453002f277560e4be2">&#9670;&#160;</a></span>eliminarJugador()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void eliminarJugador </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>datosJugadores</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Elimina un jugador del registro, previa confirmacion. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">datosJugadores</td><td>Referencia a la estructura de jugadores. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga3940fd1351d83ffabe4f80cc1e121fe0" name="ga3940fd1351d83ffabe4f80cc1e121fe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3940fd1351d83ffabe4f80cc1e121fe0">&#9670;&#160;</a></span>generarApodo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void generarApodo </td>
+          <td>(</td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>nombre</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>apellido</em></span>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char</td>          <td class="paramname"><span class="paramname"><em>apodo</em></span>[]&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Crea un apodo unico combinando partes del nombre, apellido y un numero aleatorio. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nombre</td><td>Nombre del jugador. </td></tr>
+    <tr><td class="paramname">apellido</td><td>Apellido del jugador. </td></tr>
+    <tr><td class="paramname">apodo</td><td>Referencia a la tcadena donde se guardara el apodo generado. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga27e21db9e617c62c55b7b2366a90b7c2" name="ga27e21db9e617c62c55b7b2366a90b7c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga27e21db9e617c62c55b7b2366a90b7c2">&#9670;&#160;</a></span>insercionJugador()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void insercionJugador </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>datosJugadores</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_jugador.html">Jugador</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>jugadorTemp</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inserta un nuevo jugador en el arreglo manteniendo el orden alfabetico por apodo. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">datosJugadores</td><td>Referencia a la estructura de jugadores. </td></tr>
+    <tr><td class="paramname">jugadorTemp</td><td>El jugador a insertar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga49af17e6196b23dd9a0392cfd4fc8d8d" name="ga49af17e6196b23dd9a0392cfd4fc8d8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga49af17e6196b23dd9a0392cfd4fc8d8d">&#9670;&#160;</a></span>listarJugadores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void listarJugadores </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>datosJugadores</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Muestra recursivamente la lista de todos los jugadores registrados. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">datosJugadores</td><td>La estructura de jugadores. </td></tr>
+    <tr><td class="paramname">index</td><td>El indice actual a mostrar (se llama inicialmente con <span class="tt">datosJugadores.ocup</span>). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gae37efd84c4ca8edd3883bcbabcabe512" name="gae37efd84c4ca8edd3883bcbabcabe512"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae37efd84c4ca8edd3883bcbabcabe512">&#9670;&#160;</a></span>modificarJugador()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void modificarJugador </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>datosJugadores</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Permite cambiar el nombre o apellido de un jugador existente. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">datosJugadores</td><td>Referencia a la estructura de jugadores. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>
