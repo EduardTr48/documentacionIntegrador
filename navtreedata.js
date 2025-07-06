@@ -27,7 +27,7 @@ var NAVTREE = [
     "Integrador",
     "index.html",
     [
-      ["Temas", "topics.html", "temas"],
+      ["Temas", "topics.html", "topics"],
       [
         "Estructuras de datos",
         "annotated.html",

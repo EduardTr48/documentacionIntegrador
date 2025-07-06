@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Integrador: Referencia del archivo integrador.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Integrador<span id="projectnumber">&#160;1.0.0</span>
+   </div>
+   <div id="projectbrief">Juego Star Battle con sistema por turnos</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('integrador_8cpp.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Referencia del archivo integrador.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Estructuras de datos</h2></td></tr>
+<tr class="memitem:Jugador" id="r_Jugador"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_jugador.html">Jugador</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modela el perfil completo y persistente de un jugador.  <a href="struct_jugador.html#details">Más...</a><br /></td></tr>
+<tr class="memitem:JugadorBatalla" id="r_JugadorBatalla"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_jugador_batalla.html">JugadorBatalla</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estructura temporal que almacena los datos de un jugador durante una partida.  <a href="struct_jugador_batalla.html#details">Más...</a><br /></td></tr>
+<tr class="memitem:DatosJugadores" id="r_DatosJugadores"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_datos_jugadores.html">DatosJugadores</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encapsula el arreglo de jugadores y su ocupacion.  <a href="struct_datos_jugadores.html#details">Más...</a><br /></td></tr>
+<tr class="memitem:Casilla" id="r_Casilla"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_casilla.html">Casilla</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representa una unica celda en el tablero de juego.  <a href="struct_casilla.html#details">Más...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-typedef-members" class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+typedefs</h2></td></tr>
+<tr class="memitem:a535170a6196e8d7bed76e58120a31e48" id="r_a535170a6196e8d7bed76e58120a31e48"><td class="memItemLeft" align="right" valign="top">typedef char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a535170a6196e8d7bed76e58120a31e48">tcadena</a>[50]</td></tr>
+<tr class="memitem:aafa4fc7a8088ec52fb39633be7b4bda2" id="r_aafa4fc7a8088ec52fb39633be7b4bda2"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="#a535170a6196e8d7bed76e58120a31e48">tcadena</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafa4fc7a8088ec52fb39633be7b4bda2">ListaDatos</a>[10]</td></tr>
+<tr class="memitem:a7ea3b6ab63fdd98191f9dad60986fbdb" id="r_a7ea3b6ab63fdd98191f9dad60986fbdb"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_jugador.html">Jugador</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ea3b6ab63fdd98191f9dad60986fbdb">Jugadores</a>[<a class="el" href="#a1eacfcee9565a26b1aa5fcdc0c37035c">CANTIDADJUGADORES</a>]</td></tr>
+<tr class="memitem:a2b4178799ed5fbe68c4f40bf1d8d3051" id="r_a2b4178799ed5fbe68c4f40bf1d8d3051"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="struct_casilla.html">Casilla</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b4178799ed5fbe68c4f40bf1d8d3051">Tablero</a>[<a class="el" href="#a90731617b2947001b7ffb0e23b91abdb">DIM1</a>][<a class="el" href="#a1a03c6d2043cdf52567abd052ba4b369">DIM2</a>]</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-enum-members" class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumeraciones</h2></td></tr>
+<tr class="memitem:a3b581da4ac32801bbc7b5a41094d9c09" id="r_a3b581da4ac32801bbc7b5a41094d9c09"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b581da4ac32801bbc7b5a41094d9c09">Evento</a> { <br />
+&#160;&#160;<a class="el" href="#a3b581da4ac32801bbc7b5a41094d9c09a5dff9371ab22e9139bf214e1c58ff6c7">VACIO</a> = 0
+, <a class="el" href="#a3b581da4ac32801bbc7b5a41094d9c09af0166ee1f9dbc415283e413dd8e4d0dd">NAVE</a> = 1
+, <a class="el" href="#a3b581da4ac32801bbc7b5a41094d9c09adc921f5adedec4daa81ec5e1544bcde4">XENOMORFO</a> = 2
+, <a class="el" href="#a3b581da4ac32801bbc7b5a41094d9c09ab49249cff6cb9fd9accfcfa7b4ce42da">YAUTJA</a> = 3
+, <br />
+&#160;&#160;<a class="el" href="#a3b581da4ac32801bbc7b5a41094d9c09a01ca2e19eadbfe3540ec7c76d210bd31">AGUJERO_NEGRO</a> =4
+, <a class="el" href="#a3b581da4ac32801bbc7b5a41094d9c09a765b4beedd062b711f2032888adf8e98">ASTEROIDE</a> = 5
+<br />
+ }</td></tr>
+<tr class="memdesc:a3b581da4ac32801bbc7b5a41094d9c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define los posibles eventos que pueden ocurrir en una casilla del tablero.  <a href="#a3b581da4ac32801bbc7b5a41094d9c09">Más...</a><br /></td></tr>
+<tr class="memitem:a1fb182dc32339dd80e45201e39c758fd" id="r_a1fb182dc32339dd80e45201e39c758fd"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1fb182dc32339dd80e45201e39c758fd">Atributos</a> { <a class="el" href="#a1fb182dc32339dd80e45201e39c758fdab558f87ac10173553573875a8fef63cf">MAYORPUNTAJE</a> = 1
+, <a class="el" href="#a1fb182dc32339dd80e45201e39c758fda845771bafbd6be8d18fc0e51e1dab8b6">PUNTAJEACUMULADO</a> = 2
+, <a class="el" href="#a1fb182dc32339dd80e45201e39c758fda6fd8c505c94281cdec28aa7bde61f322">CANTIDADBATALLASGANADAS</a> = 3
+, <a class="el" href="#a1fb182dc32339dd80e45201e39c758fda5b95b683729dc4a1e220b7995dff041f">CANTIDADBATALLASDISPUTADAS</a> = 4
+ }</td></tr>
+<tr class="memdesc:a1fb182dc32339dd80e45201e39c758fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define los criterios por los cuales se puede ordenar el ranking de jugadores.  <a href="#a1fb182dc32339dd80e45201e39c758fd">Más...</a><br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ga63fbe8a14ad338dd9724f6541d3c2bd1" id="r_ga63fbe8a14ad338dd9724f6541d3c2bd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilidades.html#ga63fbe8a14ad338dd9724f6541d3c2bd1">pedirCadenaValidada</a> (<a class="el" href="#a535170a6196e8d7bed76e58120a31e48">tcadena</a> &amp;guardar)</td></tr>
+<tr class="memdesc:ga63fbe8a14ad338dd9724f6541d3c2bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solicita al usuario una cadena y valida que tenga mas de 3 caracteres.  <br /></td></tr>
+<tr class="memitem:ga3940fd1351d83ffabe4f80cc1e121fe0" id="r_ga3940fd1351d83ffabe4f80cc1e121fe0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gestion__jugadores.html#ga3940fd1351d83ffabe4f80cc1e121fe0">generarApodo</a> (char nombre[], char apellido[], char apodo[])</td></tr>
+<tr class="memdesc:ga3940fd1351d83ffabe4f80cc1e121fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Crea un apodo unico combinando partes del nombre, apellido y un numero aleatorio.  <br /></td></tr>
+<tr class="memitem:gadb76b940cc7e9e873add734135aabd30" id="r_gadb76b940cc7e9e873add734135aabd30"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilidades.html#gadb76b940cc7e9e873add734135aabd30">leerOpcionValida</a> (char &amp;opcion)</td></tr>
+<tr class="memdesc:gadb76b940cc7e9e873add734135aabd30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lee una opcion de un solo caracter desde la consola.  <br /></td></tr>
+<tr class="memitem:gabb229a83ad1bc99fbf13ce951e2ffc6c" id="r_gabb229a83ad1bc99fbf13ce951e2ffc6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilidades.html#gabb229a83ad1bc99fbf13ce951e2ffc6c">leerNumeroValido</a> (int &amp;numero)</td></tr>
+<tr class="memdesc:gabb229a83ad1bc99fbf13ce951e2ffc6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lee un numero de la consola, validando que la entrada contenga solo digitos.  <br /></td></tr>
+<tr class="memitem:gad680561d88d65feddb2cc2305595ae9e" id="r_gad680561d88d65feddb2cc2305595ae9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilidades.html#gad680561d88d65feddb2cc2305595ae9e">numeroAleatorio</a> (int inf, int sup)</td></tr>
+<tr class="memdesc:gad680561d88d65feddb2cc2305595ae9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Genera un numero entero aleatorio dentro de un rango inclusivo.  <br /></td></tr>
+<tr class="memitem:ga2b9a5342eb2b91bff12b2dfe51d752db" id="r_ga2b9a5342eb2b91bff12b2dfe51d752db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gestion__jugadores.html#ga2b9a5342eb2b91bff12b2dfe51d752db">busquedaBinaria</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores, <a class="el" href="#a535170a6196e8d7bed76e58120a31e48">tcadena</a> buscar)</td></tr>
+<tr class="memdesc:ga2b9a5342eb2b91bff12b2dfe51d752db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza una busqueda binaria en el arreglo de jugadores ordenado por apodo.  <br /></td></tr>
+<tr class="memitem:ga9b78f7f750b6d659419d877e6825ee39" id="r_ga9b78f7f750b6d659419d877e6825ee39"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilidades.html#ga9b78f7f750b6d659419d877e6825ee39">convertirCadenaANumero</a> (<a class="el" href="#a535170a6196e8d7bed76e58120a31e48">tcadena</a> str)</td></tr>
+<tr class="memdesc:ga9b78f7f750b6d659419d877e6825ee39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convierte una cadena de texto (que debe contener solo digitos) a un numero entero.  <br /></td></tr>
+<tr class="memitem:ga59e552a2db38146bc0588f56db273358" id="r_ga59e552a2db38146bc0588f56db273358"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gestion__tablero.html#ga59e552a2db38146bc0588f56db273358">obtenerSimbolo</a> (<a class="el" href="#a3b581da4ac32801bbc7b5a41094d9c09">Evento</a> e)</td></tr>
+<tr class="memdesc:ga59e552a2db38146bc0588f56db273358"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve el caracter que representa a un evento en el tablero.  <br /></td></tr>
+<tr class="memitem:ga0e06674d71400ec31bfaa05bfaff0469" id="r_ga0e06674d71400ec31bfaa05bfaff0469"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilidades.html#ga0e06674d71400ec31bfaa05bfaff0469">minusculaChar</a> (char c)</td></tr>
+<tr class="memdesc:ga0e06674d71400ec31bfaa05bfaff0469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convierte un caracter a minuscula si es una letra mayuscula.  <br /></td></tr>
+<tr class="memitem:gaf2c457dcfb997ea131f356974baf8390" id="r_gaf2c457dcfb997ea131f356974baf8390"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menus.html#gaf2c457dcfb997ea131f356974baf8390">menuPrincipal</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores, <a class="el" href="#a2b4178799ed5fbe68c4f40bf1d8d3051">Tablero</a> &amp;tablero, bool &amp;tableroInicializado)</td></tr>
+<tr class="memdesc:gaf2c457dcfb997ea131f356974baf8390"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra el menu principal y gestiona la navegacion del programa.  <br /></td></tr>
+<tr class="memitem:gae162af44e64abf9154cc3c268574dd48" id="r_gae162af44e64abf9154cc3c268574dd48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menus.html#gae162af44e64abf9154cc3c268574dd48">gestionarJugadores</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores)</td></tr>
+<tr class="memdesc:gae162af44e64abf9154cc3c268574dd48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra el menu de gestion de jugadores (CRUD y listado).  <br /></td></tr>
+<tr class="memitem:gac45d7528ac139885109e3bd4357a7869" id="r_gac45d7528ac139885109e3bd4357a7869"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menus.html#gac45d7528ac139885109e3bd4357a7869">gestionarTablero</a> (<a class="el" href="#a2b4178799ed5fbe68c4f40bf1d8d3051">Tablero</a> &amp;tablero, bool &amp;tableroInicializado)</td></tr>
+<tr class="memdesc:gac45d7528ac139885109e3bd4357a7869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra el menu de gestion del tablero.  <br /></td></tr>
+<tr class="memitem:gafa3384799c6fd6f0439b86f728bfc7e3" id="r_gafa3384799c6fd6f0439b86f728bfc7e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__logica__partida.html#gafa3384799c6fd6f0439b86f728bfc7e3">jugar</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores, <a class="el" href="#a2b4178799ed5fbe68c4f40bf1d8d3051">Tablero</a> &amp;tablero)</td></tr>
+<tr class="memdesc:gafa3384799c6fd6f0439b86f728bfc7e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Orquesta una partida completa entre dos jugadores.  <br /></td></tr>
+<tr class="memitem:ga8b23f10397d53d0e3233871c9132c760" id="r_ga8b23f10397d53d0e3233871c9132c760"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ranking.html#ga8b23f10397d53d0e3233871c9132c760">mostrarRanking</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores)</td></tr>
+<tr class="memdesc:ga8b23f10397d53d0e3233871c9132c760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra el menu de ranking y ordena los jugadores segun la opcion elegida.  <br /></td></tr>
+<tr class="memitem:ga4c691e6df28b8165ed9845ffed155eda" id="r_ga4c691e6df28b8165ed9845ffed155eda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menus.html#ga4c691e6df28b8165ed9845ffed155eda">subMenuAscendenteODescendete</a> (bool &amp;ascendente)</td></tr>
+<tr class="memdesc:ga4c691e6df28b8165ed9845ffed155eda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permite al usuario especificar si un listado debe ser en orden ascendente o descendente.  <br /></td></tr>
+<tr class="memitem:ga271ece2a873ff817d49386838e48f00d" id="r_ga271ece2a873ff817d49386838e48f00d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__menus.html#ga271ece2a873ff817d49386838e48f00d">agregarJugadores</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores)</td></tr>
+<tr class="memdesc:ga271ece2a873ff817d49386838e48f00d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra el menu para agregar jugadores, ya sea manual o automaticamente.  <br /></td></tr>
+<tr class="memitem:gafc50d3bc59d7f433261953c6447a32a9" id="r_gafc50d3bc59d7f433261953c6447a32a9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gestion__jugadores.html#gafc50d3bc59d7f433261953c6447a32a9">consultarJugador</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores)</td></tr>
+<tr class="memdesc:gafc50d3bc59d7f433261953c6447a32a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Busca y muestra los datos de un jugador por su apodo.  <br /></td></tr>
+<tr class="memitem:gae37efd84c4ca8edd3883bcbabcabe512" id="r_gae37efd84c4ca8edd3883bcbabcabe512"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gestion__jugadores.html#gae37efd84c4ca8edd3883bcbabcabe512">modificarJugador</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores)</td></tr>
+<tr class="memdesc:gae37efd84c4ca8edd3883bcbabcabe512"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permite cambiar el nombre o apellido de un jugador existente.  <br /></td></tr>
+<tr class="memitem:ga04332995589ac8453002f277560e4be2" id="r_ga04332995589ac8453002f277560e4be2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gestion__jugadores.html#ga04332995589ac8453002f277560e4be2">eliminarJugador</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores)</td></tr>
+<tr class="memdesc:ga04332995589ac8453002f277560e4be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elimina un jugador del registro, previa confirmacion.  <br /></td></tr>
+<tr class="memitem:ga49af17e6196b23dd9a0392cfd4fc8d8d" id="r_ga49af17e6196b23dd9a0392cfd4fc8d8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gestion__jugadores.html#ga49af17e6196b23dd9a0392cfd4fc8d8d">listarJugadores</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores, int index)</td></tr>
+<tr class="memdesc:ga49af17e6196b23dd9a0392cfd4fc8d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra recursivamente la lista de todos los jugadores registrados.  <br /></td></tr>
+<tr class="memitem:ga27e21db9e617c62c55b7b2366a90b7c2" id="r_ga27e21db9e617c62c55b7b2366a90b7c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gestion__jugadores.html#ga27e21db9e617c62c55b7b2366a90b7c2">insercionJugador</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores, <a class="el" href="struct_jugador.html">Jugador</a> &amp;jugadorTemp)</td></tr>
+<tr class="memdesc:ga27e21db9e617c62c55b7b2366a90b7c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserta un nuevo jugador en el arreglo manteniendo el orden alfabetico por apodo.  <br /></td></tr>
+<tr class="memitem:ga38f8ec177c120d3b1e1642c080caeea6" id="r_ga38f8ec177c120d3b1e1642c080caeea6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gestion__jugadores.html#ga38f8ec177c120d3b1e1642c080caeea6">desplazarJugador</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores, int posicion)</td></tr>
+<tr class="memdesc:ga38f8ec177c120d3b1e1642c080caeea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Desplaza los elementos del arreglo hacia la izquierda para eliminar a un jugador.  <br /></td></tr>
+<tr class="memitem:ga32e8da5fe3d4e3f21f15de5366f9f808" id="r_ga32e8da5fe3d4e3f21f15de5366f9f808"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gestion__jugadores.html#ga32e8da5fe3d4e3f21f15de5366f9f808">cargaManual</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores)</td></tr>
+<tr class="memdesc:ga32e8da5fe3d4e3f21f15de5366f9f808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Permite al usuario ingresar los datos de un jugador manualmente.  <br /></td></tr>
+<tr class="memitem:gab8a2b863724b6530e3b7f613b3166c5e" id="r_gab8a2b863724b6530e3b7f613b3166c5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gestion__jugadores.html#gab8a2b863724b6530e3b7f613b3166c5e">cargaAutomatica</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores)</td></tr>
+<tr class="memdesc:gab8a2b863724b6530e3b7f613b3166c5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Genera automaticamente una cantidad de jugadores con datos aleatorios.  <br /></td></tr>
+<tr class="memitem:ga36beeff2108a2112a3201e5d3c931291" id="r_ga36beeff2108a2112a3201e5d3c931291"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gestion__tablero.html#ga36beeff2108a2112a3201e5d3c931291">generarTablero</a> (<a class="el" href="#a2b4178799ed5fbe68c4f40bf1d8d3051">Tablero</a> &amp;tablero)</td></tr>
+<tr class="memdesc:ga36beeff2108a2112a3201e5d3c931291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa y estructura el tablero de juego.  <br /></td></tr>
+<tr class="memitem:ga1f4bbddd7c07d00bafb8a404df1b61cf" id="r_ga1f4bbddd7c07d00bafb8a404df1b61cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gestion__tablero.html#ga1f4bbddd7c07d00bafb8a404df1b61cf">mostrarTablero</a> (<a class="el" href="#a2b4178799ed5fbe68c4f40bf1d8d3051">Tablero</a> &amp;tablero, bool mostrarEventos)</td></tr>
+<tr class="memdesc:ga1f4bbddd7c07d00bafb8a404df1b61cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime una representacion visual del tablero en la consola.  <br /></td></tr>
+<tr class="memitem:gab62e7020354a494b2e871d815be0b059" id="r_gab62e7020354a494b2e871d815be0b059"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gestion__tablero.html#gab62e7020354a494b2e871d815be0b059">asignarEventosAleatorios</a> (<a class="el" href="#a2b4178799ed5fbe68c4f40bf1d8d3051">Tablero</a> &amp;tablero)</td></tr>
+<tr class="memdesc:gab62e7020354a494b2e871d815be0b059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distribuye todos los tipos de eventos de forma aleatoria en el tablero.  <br /></td></tr>
+<tr class="memitem:ga8bc26858a2468599ee9689d4eff51869" id="r_ga8bc26858a2468599ee9689d4eff51869"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__gestion__tablero.html#ga8bc26858a2468599ee9689d4eff51869">colocarEventos</a> (<a class="el" href="#a2b4178799ed5fbe68c4f40bf1d8d3051">Tablero</a> &amp;tablero, <a class="el" href="#a3b581da4ac32801bbc7b5a41094d9c09">Evento</a> evento, int cantidad, bool superior)</td></tr>
+<tr class="memdesc:ga8bc26858a2468599ee9689d4eff51869"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coloca una cantidad especifica de un tipo de evento en el tablero.  <br /></td></tr>
+<tr class="memitem:ga32ce652112e5232c1ac053d1205aeeaa" id="r_ga32ce652112e5232c1ac053d1205aeeaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__logica__partida.html#ga32ce652112e5232c1ac053d1205aeeaa">procesarEvento</a> (int casilla, <a class="el" href="struct_jugador_batalla.html">JugadorBatalla</a> &amp;jugadorBatalla, <a class="el" href="struct_jugador_batalla.html">JugadorBatalla</a> &amp;jugadorEnemigo, <a class="el" href="#a2b4178799ed5fbe68c4f40bf1d8d3051">Tablero</a> &amp;tablero, bool &amp;pierde)</td></tr>
+<tr class="memdesc:ga32ce652112e5232c1ac053d1205aeeaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Procesa el evento de la casilla atacada y actualiza el estado de los jugadores.  <br /></td></tr>
+<tr class="memitem:ga20b6e04cfa2a27b5ce0f29513e11c073" id="r_ga20b6e04cfa2a27b5ce0f29513e11c073"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__logica__partida.html#ga20b6e04cfa2a27b5ce0f29513e11c073">determinarGanador</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;datosJugadores, <a class="el" href="struct_jugador_batalla.html">JugadorBatalla</a> &amp;j1, <a class="el" href="struct_jugador_batalla.html">JugadorBatalla</a> &amp;j2, int posJ1, int posJ2)</td></tr>
+<tr class="memdesc:ga20b6e04cfa2a27b5ce0f29513e11c073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Se invoca al final de la partida para anunciar al ganador y actualizar estadisticas.  <br /></td></tr>
+<tr class="memitem:gac40e8de01e1313e671fd1e0555082ae7" id="r_gac40e8de01e1313e671fd1e0555082ae7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__logica__partida.html#gac40e8de01e1313e671fd1e0555082ae7">ingresarCasillaValida</a> (<a class="el" href="#a2b4178799ed5fbe68c4f40bf1d8d3051">Tablero</a> &amp;tablero, int &amp;casilla, bool superior)</td></tr>
+<tr class="memdesc:gac40e8de01e1313e671fd1e0555082ae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Solicita al usuario una casilla para atacar y la valida.  <br /></td></tr>
+<tr class="memitem:ga30f44f5576d47894cc269802613e9aa4" id="r_ga30f44f5576d47894cc269802613e9aa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__logica__partida.html#ga30f44f5576d47894cc269802613e9aa4">inicializarJugadorBatalla</a> (<a class="el" href="struct_jugador_batalla.html">JugadorBatalla</a> &amp;jugadorBatalla, <a class="el" href="#a535170a6196e8d7bed76e58120a31e48">tcadena</a> apodoTemp)</td></tr>
+<tr class="memdesc:ga30f44f5576d47894cc269802613e9aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepara la estructura <a class="el" href="struct_jugador_batalla.html" title="Estructura temporal que almacena los datos de un jugador durante una partida.">JugadorBatalla</a> para un jugador al inicio de una partida.  <br /></td></tr>
+<tr class="memitem:gaf7584d4ca1c35c0ab93ddb22453551bd" id="r_gaf7584d4ca1c35c0ab93ddb22453551bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ranking.html#gaf7584d4ca1c35c0ab93ddb22453551bd">cambio</a> (<a class="el" href="struct_jugador.html">Jugador</a> &amp;j1, <a class="el" href="struct_jugador.html">Jugador</a> &amp;j2)</td></tr>
+<tr class="memdesc:gaf7584d4ca1c35c0ab93ddb22453551bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intercambia los datos de dos estructuras <a class="el" href="struct_jugador.html" title="Modela el perfil completo y persistente de un jugador.">Jugador</a>.  <br /></td></tr>
+<tr class="memitem:gad9596a6476c9fe4b4b985251a53ae645" id="r_gad9596a6476c9fe4b4b985251a53ae645"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ranking.html#gad9596a6476c9fe4b4b985251a53ae645">copiarJugadores</a> (<a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;origen, <a class="el" href="struct_datos_jugadores.html">DatosJugadores</a> &amp;destino)</td></tr>
+<tr class="memdesc:gad9596a6476c9fe4b4b985251a53ae645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza una copia profunda del arreglo de jugadores.  <br /></td></tr>
+<tr class="memitem:ga145a7bad9617759be37bf5692cfb8ea3" id="r_ga145a7bad9617759be37bf5692cfb8ea3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ranking.html#ga145a7bad9617759be37bf5692cfb8ea3">shakertSort</a> (<a class="el" href="#a7ea3b6ab63fdd98191f9dad60986fbdb">Jugadores</a> &amp;jugadores, int ocup, <a class="el" href="#a1fb182dc32339dd80e45201e39c758fd">Atributos</a> valor, bool ascendente)</td></tr>
+<tr class="memdesc:ga145a7bad9617759be37bf5692cfb8ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ordena el arreglo de jugadores utilizando el algoritmo Shaker Sort.  <br /></td></tr>
+<tr class="memitem:ga1b13496c5c3e3521d66c68685c745f10" id="r_ga1b13496c5c3e3521d66c68685c745f10"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__logica__partida.html#ga1b13496c5c3e3521d66c68685c745f10">obtenerPuntajePorEvento</a> (<a class="el" href="#a3b581da4ac32801bbc7b5a41094d9c09">Evento</a> evento)</td></tr>
+<tr class="memdesc:ga1b13496c5c3e3521d66c68685c745f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Devuelve el puntaje asociado a un tipo de evento.  <br /></td></tr>
+<tr class="memitem:ga5c1c3e31e86f748c8e18e5971f220bd3" id="r_ga5c1c3e31e86f748c8e18e5971f220bd3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ranking.html#ga5c1c3e31e86f748c8e18e5971f220bd3">compararJugadores</a> (<a class="el" href="struct_jugador.html">Jugador</a> a, <a class="el" href="struct_jugador.html">Jugador</a> b, <a class="el" href="#a1fb182dc32339dd80e45201e39c758fd">Atributos</a> valor, bool ascendente)</td></tr>
+<tr class="memdesc:ga5c1c3e31e86f748c8e18e5971f220bd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funcion de comparacion para el algoritmo de ordenamiento.  <br /></td></tr>
+<tr class="memitem:ga9a57697380da354ee0178c4647ce5d48" id="r_ga9a57697380da354ee0178c4647ce5d48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilidades.html#ga9a57697380da354ee0178c4647ce5d48">mostrarJugadorBatalla</a> (<a class="el" href="struct_jugador_batalla.html">JugadorBatalla</a> jugadorBatalla)</td></tr>
+<tr class="memdesc:ga9a57697380da354ee0178c4647ce5d48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra el estado de un jugador durante la batalla.  <br /></td></tr>
+<tr class="memitem:ga213681947d59ea33ae1fbb8dc75c062c" id="r_ga213681947d59ea33ae1fbb8dc75c062c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__utilidades.html#ga213681947d59ea33ae1fbb8dc75c062c">mostrarJugador</a> (<a class="el" href="struct_jugador.html">Jugador</a> jugador)</td></tr>
+<tr class="memdesc:ga213681947d59ea33ae1fbb8dc75c062c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra el perfil completo y las estadisticas de un jugador.  <br /></td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Punto de entrada del programa.  <br /></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a90731617b2947001b7ffb0e23b91abdb" id="r_a90731617b2947001b7ffb0e23b91abdb"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90731617b2947001b7ffb0e23b91abdb">DIM1</a> = 10</td></tr>
+<tr class="memitem:a1a03c6d2043cdf52567abd052ba4b369" id="r_a1a03c6d2043cdf52567abd052ba4b369"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a03c6d2043cdf52567abd052ba4b369">DIM2</a> = 10</td></tr>
+<tr class="memitem:a1eacfcee9565a26b1aa5fcdc0c37035c" id="r_a1eacfcee9565a26b1aa5fcdc0c37035c"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1eacfcee9565a26b1aa5fcdc0c37035c">CANTIDADJUGADORES</a> = 100</td></tr>
+</table>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Documentación de «typedef»</h2>
+<a id="a7ea3b6ab63fdd98191f9dad60986fbdb" name="a7ea3b6ab63fdd98191f9dad60986fbdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ea3b6ab63fdd98191f9dad60986fbdb">&#9670;&#160;</a></span>Jugadores</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_jugador.html">Jugador</a> Jugadores[<a class="el" href="#a1eacfcee9565a26b1aa5fcdc0c37035c">CANTIDADJUGADORES</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aafa4fc7a8088ec52fb39633be7b4bda2" name="aafa4fc7a8088ec52fb39633be7b4bda2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafa4fc7a8088ec52fb39633be7b4bda2">&#9670;&#160;</a></span>ListaDatos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="#a535170a6196e8d7bed76e58120a31e48">tcadena</a> ListaDatos[10]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2b4178799ed5fbe68c4f40bf1d8d3051" name="a2b4178799ed5fbe68c4f40bf1d8d3051"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b4178799ed5fbe68c4f40bf1d8d3051">&#9670;&#160;</a></span>Tablero</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef <a class="el" href="struct_casilla.html">Casilla</a> Tablero[<a class="el" href="#a90731617b2947001b7ffb0e23b91abdb">DIM1</a>][<a class="el" href="#a1a03c6d2043cdf52567abd052ba4b369">DIM2</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a535170a6196e8d7bed76e58120a31e48" name="a535170a6196e8d7bed76e58120a31e48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a535170a6196e8d7bed76e58120a31e48">&#9670;&#160;</a></span>tcadena</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef char tcadena[50]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Documentación de enumeraciones</h2>
+<a id="a1fb182dc32339dd80e45201e39c758fd" name="a1fb182dc32339dd80e45201e39c758fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fb182dc32339dd80e45201e39c758fd">&#9670;&#160;</a></span>Atributos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a1fb182dc32339dd80e45201e39c758fd">Atributos</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define los criterios por los cuales se puede ordenar el ranking de jugadores. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a1fb182dc32339dd80e45201e39c758fdab558f87ac10173553573875a8fef63cf" name="a1fb182dc32339dd80e45201e39c758fdab558f87ac10173553573875a8fef63cf"></a>MAYORPUNTAJE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1fb182dc32339dd80e45201e39c758fda845771bafbd6be8d18fc0e51e1dab8b6" name="a1fb182dc32339dd80e45201e39c758fda845771bafbd6be8d18fc0e51e1dab8b6"></a>PUNTAJEACUMULADO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1fb182dc32339dd80e45201e39c758fda6fd8c505c94281cdec28aa7bde61f322" name="a1fb182dc32339dd80e45201e39c758fda6fd8c505c94281cdec28aa7bde61f322"></a>CANTIDADBATALLASGANADAS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1fb182dc32339dd80e45201e39c758fda5b95b683729dc4a1e220b7995dff041f" name="a1fb182dc32339dd80e45201e39c758fda5b95b683729dc4a1e220b7995dff041f"></a>CANTIDADBATALLASDISPUTADAS&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a3b581da4ac32801bbc7b5a41094d9c09" name="a3b581da4ac32801bbc7b5a41094d9c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b581da4ac32801bbc7b5a41094d9c09">&#9670;&#160;</a></span>Evento</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a3b581da4ac32801bbc7b5a41094d9c09">Evento</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define los posibles eventos que pueden ocurrir en una casilla del tablero. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valores de enumeraciones</th></tr><tr><td class="fieldname"><a id="a3b581da4ac32801bbc7b5a41094d9c09a5dff9371ab22e9139bf214e1c58ff6c7" name="a3b581da4ac32801bbc7b5a41094d9c09a5dff9371ab22e9139bf214e1c58ff6c7"></a>VACIO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3b581da4ac32801bbc7b5a41094d9c09af0166ee1f9dbc415283e413dd8e4d0dd" name="a3b581da4ac32801bbc7b5a41094d9c09af0166ee1f9dbc415283e413dd8e4d0dd"></a>NAVE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3b581da4ac32801bbc7b5a41094d9c09adc921f5adedec4daa81ec5e1544bcde4" name="a3b581da4ac32801bbc7b5a41094d9c09adc921f5adedec4daa81ec5e1544bcde4"></a>XENOMORFO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3b581da4ac32801bbc7b5a41094d9c09ab49249cff6cb9fd9accfcfa7b4ce42da" name="a3b581da4ac32801bbc7b5a41094d9c09ab49249cff6cb9fd9accfcfa7b4ce42da"></a>YAUTJA&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3b581da4ac32801bbc7b5a41094d9c09a01ca2e19eadbfe3540ec7c76d210bd31" name="a3b581da4ac32801bbc7b5a41094d9c09a01ca2e19eadbfe3540ec7c76d210bd31"></a>AGUJERO_NEGRO&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3b581da4ac32801bbc7b5a41094d9c09a765b4beedd062b711f2032888adf8e98" name="a3b581da4ac32801bbc7b5a41094d9c09a765b4beedd062b711f2032888adf8e98"></a>ASTEROIDE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Documentación de funciones</h2>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Punto de entrada del programa. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>0 si la ejecucion es exitosa. </dd></dl>
+
+</div>
+</div>
+<a name="doc-var-members" id="doc-var-members"></a><h2 id="header-doc-var-members" class="groupheader">Documentación de variables</h2>
+<a id="a1eacfcee9565a26b1aa5fcdc0c37035c" name="a1eacfcee9565a26b1aa5fcdc0c37035c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eacfcee9565a26b1aa5fcdc0c37035c">&#9670;&#160;</a></span>CANTIDADJUGADORES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int CANTIDADJUGADORES = 100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90731617b2947001b7ffb0e23b91abdb" name="a90731617b2947001b7ffb0e23b91abdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90731617b2947001b7ffb0e23b91abdb">&#9670;&#160;</a></span>DIM1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int DIM1 = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a03c6d2043cdf52567abd052ba4b369" name="a1a03c6d2043cdf52567abd052ba4b369"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a03c6d2043cdf52567abd052ba4b369">&#9670;&#160;</a></span>DIM2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int DIM2 = 10</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="integrador_8cpp.html">integrador.cpp</a></li>
+    <li class="footer">Generado por <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>
